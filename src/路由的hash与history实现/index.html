@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <a href="#/home">HOME</a>
+    <a href="#/about">ABOUT</a>
+</body>
+<script>
+  //前端路由有hash和history两种模式，都是通过监听地址的改变，不让其去静态服务器请求资源而对组件进行更换
+  //1.hash，当hash值发生改变，通过hashchange监听，location.hash获取哈希值对组件进行处理
+  //2.history模式，通过取消a元素的默认点击事件，
+
+  // hash模式
+  let taga = document.getElementsByTagName("a")
+  document.addEventListener('hashchange',()=>{
+    console.log(33333);
+  })
+
+</script>
+</html>
