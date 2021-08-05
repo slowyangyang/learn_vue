@@ -1,4 +1,6 @@
 import { createApp } from 'vue'
-import App from './route补充/app.vue'
-
-createApp(App).mount('#app')
+import App from './learn_vuex/app.vue'
+import store from './learn_vuex/store'
+const app = createApp(App)
+app.use(store)
+app.mount('#app')
